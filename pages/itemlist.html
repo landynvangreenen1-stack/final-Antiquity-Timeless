@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Vault - Curated Gallery</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+</head>
+<body>
+ <header style="background-color: rgba(255, 255, 255, 0.4); padding: 20px 0; border-bottom: 1px solid rgba(85, 107, 47, 0.15); text-align: center;">
+        <nav style="display: flex; justify-content: center; gap: 30px;">
+            <a href="index.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Home</a>
+            <a href="about us.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">About us</a>
+            <a href="contactus.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Contact us</a>
+            <a href="itemlist.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Items</a>
+            <a href="our services.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Our Services</a>
+            <a href="enquiries.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Enquiries</a>
+        </nav>
+    </header>
+
+    <header class="gallery-header">
+        <h1>The Thrift Vault</h1>
+        <p>A visual lookbook of our rarest vintage pieces, statement archival garments, and luxury pre-loved footwear.</p>
+    </header>
+
+    <main class="gallery-grid">
+        
+        <div class="gallery-item" data-title="Archival Luxury Heel Collection" data-desc="A stunning lineup of statement vintage stilettos, designer pumps, and bold texturized statement footwear.">
+            <div class="img-container">
+                <img src="gia.jpg" alt="Collection of luxury vintage heels">
+                <div class="overlay"><span>View Details</span></div>
+            </div>
+            <div class="item-caption">
+                <h3>Archival Luxury Heels</h3>
+                <p>Curated Footwear</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-title="70s Penny Lane Statement Coats" data-desc="Authentic vintage suede and leather jackets complete with dramatic, plush faux fur and shearling trim details.">
+            <div class="img-container">
+                <img src="Welcome to Penny Lane.jpg" alt="Rack of Penny Lane style fur-trimmed coats">
+                <div class="overlay"><span>View Details</span></div>
+            </div>
+            <div class="item-caption">
+                <h3>Penny Lane Outerwear</h3>
+                <p>70s Statement Coats</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-title="Treasures From Another Time" data-desc="Exquisite evening wear featuring delicate distressed netting, chainmail overlay, and intricately beaded slip silhouettes.">
+            <div class="img-container">
+                <img src="dresses.jpg" alt="Collection of vintage evening wear with intricate textures and silhouettes">
+                <div class="overlay"><span>View Details</span></div>
+            </div>
+            <div class="item-caption">
+                <h3>Ethical Evening Wear</h3>
+                <p>Textures & Silhouettes</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="lightbox" class="lightbox hidden">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Enlarged gallery view">
+            <div class="lightbox-info">
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

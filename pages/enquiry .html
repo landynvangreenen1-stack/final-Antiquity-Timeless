@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Store - Drop Us a Line</title>
+    <link rel="stylesheet" href="styleenquiry.css">
+</head>
+<body>
+ <header style="background-color: rgba(255, 255, 255, 0.4); padding: 20px 0; border-bottom: 1px solid rgba(85, 107, 47, 0.15); text-align: center;">
+        <nav style="display: flex; justify-content: center; gap: 30px;">
+            <a href="index.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Home</a>
+            <a href="about us.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">About us</a>
+            <a href="contactus.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Contact us</a>
+            <a href="itemlist.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Items</a>
+            <a href="our services.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Our Services</a>
+            <a href="enquiries.html" style="color: #556b2f; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Enquiries</a>
+        </nav>
+    </header>
+
+    <div class="form-card">
+        <h2>Drop Us a Line</h2>
+        <p class="form-subtitle">Have questions about a pre-loved find, donations, or an order? We'd love to help!</p>
+        
+        <form id="thriftEnquiryForm" novalidate>
+            <div class="form-group">
+                <label for="fullName">Your Name</label>
+                <input type="text" id="fullName"  required>
+                <span class="error-msg" id="nameError">Please let us know your name.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" placeholder="name@example.com" required>
+                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="userQuery">What's your query?</label>
+                <textarea id="userQuery" rows="5" placeholder="Ask away about our vintage stock..." required></textarea>
+                <span class="error-msg" id="queryError">Please enter your message or question.</span>
+            </div>
+
+            <button type="submit" id="submitBtn">Send Message</button>
+        </form>
+
+        <div id="successCard" class="hidden text-center">
+            <h3> Message Sent!</h3>
+            <p>Thank you for reaching out. We will get back to your pre-loved questions as soon as possible.</p>
+        </div>
+    </div>
+
+    <script src="scriptenq.js"></script>
+</body>
+</html>

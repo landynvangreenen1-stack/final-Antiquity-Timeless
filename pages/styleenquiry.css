@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', Garamond, serif;
+}
+
+body {
+    background-color: #f5f0e1; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.form-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(85, 107, 47, 0.08);
+    max-width: 480px;
+    width: 100%;
+    border: 1px solid #e3dac9;
+}
+
+h2 {
+    color: #556b2f; 
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.form-subtitle {
+    color: #6e675f;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 28px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #4a3f35;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #ded7ca;
+    border-radius: 6px;
+    background-color: #fbf9f5;
+    font-size: 15px;
+    color: #332d27;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #556b2f; 
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(85, 107, 47, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+button {
+    background-color: #556b2f; 
+    color: #f5f0e1; 
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #3d4e22;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+
+.error-msg {
+    color: #b33927;
+    font-size: 12px;
+    display: none;
+    margin-top: 4px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+    border-color: #b33927;
+    background-color: #fffaf9;
+}
+
+.form-group.invalid .error-msg {
+    display: block;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#successCard h3 {
+    color: #556b2f;
+    margin-bottom: 10px;
+}
+
+#successCard p {
+    color: #6e675f;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 15px;
+}
